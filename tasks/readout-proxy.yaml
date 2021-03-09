@@ -41,3 +41,5 @@ command:
     - "{{infologger_severity}}"
     - "--infologger-mode"
     - "{{infologger_mode}}"
+    - "--fairmq-rate-logging"
+    - "5"
