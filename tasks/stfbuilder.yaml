@@ -31,7 +31,7 @@ command:
   arguments:
     - "--session=default"
     - "--transport=shmem"
-    - "--monitoring-backend='{{ monitoring_dd_url }}'"
+    - "--monitoring-backend='{{ monitoring_dd_url }},influxdb-udp://flptest1.cern.ch:8099'"
     - "--detector-rdh={{ rdh_version }}"
     - "--detector-subspec={{ dd_detector_subspec }}"
     - "--severity={{ fmq_severity }}"
